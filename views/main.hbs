@@ -1,0 +1,95 @@
+{{!-- Encabezado --}}
+<div class="header">
+    <h1>Mujeres y Hombres en el Hogar</h1>
+</div>
+{{!-- Navegafor --}}
+<div class="nav">
+    <a href="/registros">Registros</a>
+    <a href="/info">Calculo Total</a>
+</div>
+{{!-- Formulario GET --}}
+<div class="column">
+    <div class="headertabla">
+        <h2>Método GET</h2>
+    </div>
+    <form action="/hogar" method="GET">
+        <table>
+            <tr>
+                <th>Actividad</th>
+                <th>Hombre</th>
+                <th>Mujer</th>
+            </tr>
+            <tr>
+                <td><p>Lavar los platos</p></td>
+                <td><input type="radio" name="platos" value="male"></td>
+                <td><input type="radio" name="platos" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Cocinar</p></td>
+                <td><input type="radio" name="Cocinar" value="male"></td>
+                <td><input type="radio" name="Cocinar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Barrer</p></td>
+                <td><input type="radio" name="Barrer" value="male"></td>
+                <td><input type="radio" name="Barrer" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Planchar</p></td>
+                <td><input type="radio" name="Planchar" value="male"></td>
+                <td><input type="radio" name="Planchar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Ir por la despensa</p></td>
+                <td><input type="radio" name="despensa" value="male"></td>
+                <td><input type="radio" name="despensa" value="female"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{{!-- Formulario POST --}}
+<div class="column">
+    <div class="headertabla">
+        <h2>Método POST</h2>
+    </div>
+    <form action="hogar" method="POST">
+        <table>
+            <tr>
+                <th>Actividad</th>
+                <th>Hombre</th>
+                <th>Mujer</th>
+            </tr>
+            <tr>
+                <td><p>Lavar los platos</p></td>
+                <td><input type="radio" name="platos" value="male"></td>
+                <td><input type="radio" name="platos" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Cocinar</p></td>
+                <td><input type="radio" name="Cocinar" value="male"></td>
+                <td><input type="radio" name="Cocinar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Barrer</p></td>
+                <td><input type="radio" name="Barrer" value="male"></td>
+                <td><input type="radio" name="Barrer" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Planchar</p></td>
+                <td><input type="radio" name="Planchar" value="male"></td>
+                <td><input type="radio" name="Planchar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Ir por la despensa</p></td>
+                <td><input type="radio" name="despensa" value="male"></td>
+                <td><input type="radio" name="despensa" value="female"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</div>

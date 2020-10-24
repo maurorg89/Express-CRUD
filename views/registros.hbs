@@ -1,0 +1,17 @@
+<div class="column">
+    <div class="header">
+        <h2>Registros</h2>
+    </div>
+    <div class="nav">
+        <a href="/">Regresar</a>
+    </div>
+    <ul>
+        {{#each basedeDatos}}
+        <li>
+            {{this.id}},{{this.platos}},{{this.Cocinar}},{{this.Barrer}},{{this.Planchar}},{{this.despensa}},
+            <form method="POST" action="/registros/{{this.id}}?_method=DELETE" style="display: inline;"><input type="submit" value="Borrar"></form>
+            <a href="/registros/{{this.id}}/editar">Editar</a>
+        </li>
+        {{/each}}
+     </ul>
+</div>

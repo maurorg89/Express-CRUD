@@ -1,0 +1,44 @@
+<div class="header">
+    <h1>Resultados</h1>
+</div>
+<div class="nav">
+    <a href="/">Regresar</a>
+</div>
+
+<div class="column">
+    <div class="headertabla">
+        <h2>Hombres</h2>
+    </div>
+    <table>    
+        <tr>
+            <th>Actividad</th>
+            <th>Numero</th>
+        </tr>
+        {{#each hombres}}
+        <tr class="{{this.style}}">
+            <td>{{this.id}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+
+<div class="column">
+    <div class="headertabla">
+        <h2>Mujeres</h2>    
+    </div>
+    <table>
+        <tr>
+            <th>Actividad</th>
+            <th>Numero</th>
+        </tr>
+        {{#each mujeres}}
+        <tr class={{this.style}}>
+            <td>{{this.id}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+
+ 

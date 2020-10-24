@@ -1,0 +1,44 @@
+<div class="column">
+    <div class="headertabla">
+        <h2>Editar</h2>
+    </div>
+    {{#with registro}}
+    <form method="POST" action="/registros/{{this.id}}?_method=PUT">
+        <table>
+            <tr>
+                <th>Actividad</th>
+                <th>Hombre</th>
+                <th>Mujer</th>
+            </tr>
+            <tr>
+                <td><p>Lavar los platos</p></td>
+                <td><input type="radio" name="platos" value="male" ></td>
+                <td><input type="radio" name="platos" value="female" ></td>
+            </tr>
+            <tr>
+                <td><p>Cocinar</p></td>
+                <td><input type="radio" name="Cocinar" value="male"></td>
+                <td><input type="radio" name="Cocinar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Barrer</p></td>
+                <td><input type="radio" name="Barrer" value="male"></td>
+                <td><input type="radio" name="Barrer" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Planchar</p></td>
+                <td><input type="radio" name="Planchar" value="male"></td>
+                <td><input type="radio" name="Planchar" value="female"></td>
+            </tr>
+            <tr>
+                <td><p>Ir por la despensa</p></td>
+                <td><input type="radio" name="despensa" value="male"></td>
+                <td><input type="radio" name="despensa" value="female"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+    {{/with}}
+</div>
